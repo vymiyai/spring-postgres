@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_PORT:${OPENSHIFT_POSTGRESQL_DB_HOST}}/mow
+    url: jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/mow
     username: ${OPENSHIFT_POSTGRESQL_DB_USERNAME}
     password: ${OPENSHIFT_POSTGRESQL_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
